@@ -1,0 +1,140 @@
+body {
+  margin: 0 auto;
+  background-color: #fceaea;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Navigation */
+.nav {
+  display: block;
+  height: 100%;
+  text-align: center;
+  font-family: 'Pacifico';
+  font-weight: 600;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__link {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin: auto 60px;
+  color: #000;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1000;
+  height: 7%;
+  background-color: #fff;
+  box-shadow: 0px 5px 2px #ccc;
+}
+
+.header__inner {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.header__logo {
+  font-family: 'Pacifico';
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+}
+
+.header__name {
+  vertical-align: top;
+  color: #000;
+}
+
+.header__icons {
+  vertical-align: middle;
+  display: flex;
+  margin-right: 0;
+}
+
+.icons__inner {
+  margin: auto 20px;
+}
+
+.page {
+  width: 80%;
+  display: block;
+  margin: 65px auto;
+  height: 100%;
+}
+
+/* PRODUCT CARD */
+.product {
+  margin-left: 10px;
+  margin-top: 0;
+  width: 250px;
+}
+
+.product__info {
+  font-family: 'Pacifico';
+  font-size: 25px;
+  font-weight: normal;
+}
+.product__info h3 {
+  font-family: 'Vag World';
+  font-weight: 300;
+  text-align: center;
+  line-height: 0;
+
+}
+
+.product__image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.info-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 900;
+}
+
+.btn__add-to-cart {
+  height: 40px;
+  width: 120px;
+  display: flex;
+  border-radius: 10px;
+  border: none;
+  background-color: #8bc34a;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Futura Round';
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/product.css' %}">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            {% for image_item in product.productimage_set.all %}
+            <div class="product-image-item">
+                <img src="{{ image_item.image.url }}" alt="" class="product-image">
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-lg-6">
+            <h1 class="text-center">
+                {{ product.name }}
+            </h1>
+            <div>
+                <h3>
+                    Цена: <span class="product-price">{{ product.price }}₽</span>
+                </h3>
+
+            </div>
+            <div class="">
+                {{ product.description }}
+            </div>
+            <div class="buy-form">
+                <form id="form_buying_product" action="" class="form-inline">
+                    <li class="form-group">
+                        <input type="number" class="control" name="number" id="number">
+                    </li>
+
+                    <li class="form-group">
+                        <button id="submit_btn" type="submit" class="btn btn-outline-dark"
+                                data-product_id = "{{ product.id }}"
+                                data-name = "{{ product.name }}"
+                                data-price = "{{ product.price }}"
+                        >
+                            Купить
+                        </button>
+                    </li>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
